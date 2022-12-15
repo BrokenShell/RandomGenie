@@ -134,6 +134,11 @@ python setup.py build_ext --inplace
 
 This will compile the Cython code and produce a `random_engine.so` file (or `random_engine.dll` on Windows) in the same directory. This file can be imported as a regular Python module and used to create instances of the `PyRandomNumberEngine` class.
 
+The following is another option for installing the random_genie locally.
+```shell
+pip install .
+```
+
 ```python
 import random_engine
 
@@ -147,3 +152,4 @@ random_double = engine.generate_double(0.0, 1.0)
 ```
 
 Note that this is just one example of a `setup.py` file for a Cython extension. The exact details of the file will depend on the specific Cython code you are building and your own requirements and preferences.
+
